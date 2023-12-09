@@ -11,12 +11,13 @@ pg.init()
 WIDTH, HEIGHT = 1800, 450
 WIN = pg.display.set_mode((WIDTH, HEIGHT))
 pg.display.set_caption('PyPiano')
+pg.display.set_icon(pg.image.load(os.path.join('Piano', 'assets', 'logo.png')))
 
 bgColor = (255, 229, 178)
 pianoSize = (1729, 185)
 
-piano = pg.transform.scale(pg.image.load(os.path.join('Piano', 'piano2.png')), pianoSize)
-clef = pg.image.load(os.path.join('Piano', 'clef2.png'))
+piano = pg.transform.scale(pg.image.load(os.path.join('Piano', 'assets', 'piano2.png')), pianoSize)
+clef = pg.image.load(os.path.join('Piano', 'assets', 'clef2.png'))
 
 
 def main():
