@@ -6,7 +6,7 @@ Class Point
 import math
 
 
-class Point():
+class Point:
     """ Class Point """
 
     def __str__(self):
@@ -79,7 +79,7 @@ class Point3D(Point):
         """ Return the distance between two points """
 
         if isinstance(point, Point):
-            return math.sqrt((self.x - point.x)**2 + (self.y - point.y)**2)
+            return super().distance_calc(point)
         elif isinstance(point, Point3D):
             return math.sqrt((self.x - point.x)**2 + (self.y - point.y)**2 + (self.z - point.z)**2)
         else:
@@ -95,6 +95,6 @@ if __name__ == '__main__':
     P3.display()
 
     P4 = Point3D(7, 7, 7)
-    print(P1.distance_calc(P4))
+    print(P4.distance_calc(P1)) # type: ignore
 
-    print(P1 + P2)
+    print(P1 + P2) # type: ignore
