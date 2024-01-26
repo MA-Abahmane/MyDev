@@ -4,6 +4,7 @@ Class Point
 """
 
 import math
+from msilib.schema import Property
 
 
 class Point:
@@ -17,6 +18,11 @@ class Point:
         """ Constructor """
         self.x = x
         self.y = y
+        self.__z = 0
+
+    def __del__(self):
+        """ Delete Class Instance """
+        print('deleting', self.__class__.__name__)
 
     def display(self):
         """ Display the points coordinates """
@@ -54,6 +60,9 @@ if __name__ == '__main__':
 
     P2 = Point(10, 10)
     print(P1.distance_calc(P2))
+
+    print('=>', P1.__dict__)
+    # del P1
 
     print('___-_______-____-____-')
 
