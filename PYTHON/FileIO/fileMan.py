@@ -8,6 +8,7 @@ f = open('file.txt', 'r')
 ln = f.tell()
 ln1 = f.readline()
 ln2 = f.readlines()
+f.seek(0)
 ln3 = f.read()
 
 '''
@@ -18,17 +19,24 @@ print(ln3)
 '''
 
 
-f = open('file.txt', 'w')
-f.write('hello\n')
-f.writelines(['1Line\n', '2Line\n', '\n', '4Line\n'])
-
-
-f = open('file.txt', 'a')
-f.write('0ADD\n')
-f.writelines(['1ADD\n', '2ADD\n', '\n', '4ADD\n'])
-
-
 try:
     f = open('file.txt', 'x')
 except FileExistsError:
     print('file Exists') 
+
+
+f = open('file.txt', 'r+')
+
+# Writing
+f.write('line0\n')
+f.writelines(['line1\n', 'line2\n', 'line3\n'])
+
+# Seeker reset
+f.seek(0)
+
+# Reading
+line = f.readline()
+print(f'first line:\n{line}')
+
+data = f.read()
+print(f'data:\n{data}')
