@@ -43,4 +43,4 @@ select p.ProductID, p.ProductName, c.CategoryID from Products p
 left join Categorys c using(CategoryID);
 
 select p.ProductID, p.ProductName, c.CategoryID, c.CategoryName from Products p
-cross join Categorys c 
+cross join Categorys c; 

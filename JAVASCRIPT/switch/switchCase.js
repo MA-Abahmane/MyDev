@@ -1,13 +1,23 @@
 
+let day
 
-n = Number(prompt('Whats 2 + 2'))
-
-switch (n)
-{
+switch (new Date().getDay()) {
+    case 0:
+        day = 'Sun'; break;
+    case 1:
+        day = 'Mon'; break;
     case 2:
-        console.log('Your stupid'); break;
+        day = 'Tue'; break;
+    case 3:
+        day = 'Wed'; break;
     case 4:
-        console.log('Correct!'); break;
+        day = 'Thu'; break;
+    case 5:
+        day = 'Fri'; break;
+    case 6:
+        day = 'Sat'; break;
     default:
-        console.log('Not right'); break;
+        day = 'Error'
 }
+
+console.log(`Today is ${day}`);
