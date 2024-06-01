@@ -1,4 +1,8 @@
-
+/**
+ * map() =>
+ *   iterating trough each elements
+ *   of a copy of the original list
+ */
 
 // convert a list of Fahrenheit values to Celsius
 

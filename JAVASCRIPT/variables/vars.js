@@ -115,7 +115,7 @@ console.log('Month :', d.getMonth());  // Month 0 - 11
 console.log('Day : ', d.getDate());  // Day in Month 1 - 31
 console.log('Week Day : ', d.getDay());  // Week day 0 - 6
 console.log('Hour : ', d.getHours());  // Hours 0 - 23
-console.log('Minute : ', d.getMinutes());  // Week day 0 - 6
-console.log('Seconds : ', d.getSeconds());  // Week day 0 - 6
+console.log('Minute : ', d.getMinutes());  // Minute 0 - 59
+console.log('Seconds : ', d.getSeconds());  // seconds 0 - 59
 
 

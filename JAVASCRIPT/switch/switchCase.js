@@ -17,7 +17,8 @@ switch (new Date().getDay()) {
     case 6:
         day = 'Sat'; break;
     default:
-        day = 'Error'
+        console.log('Error: Invalid day number.');
+        day = 'Null'
 }
 
 console.log(`Today is ${day}`);
