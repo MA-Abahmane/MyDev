@@ -95,8 +95,8 @@ bx.style.justifyContent = 'center'
 // Create Elements \\
 
 shopList = [
-    ['Milk', 2],
-    ['Bread', 1],
+    ['Milk', '3L'],
+    ['Bread', 7],
     ['Eggs', 12],
     ['Butter', 1]
 ]
@@ -118,26 +118,102 @@ let newElm = document.createElement('li')
 
 newElm.textContent = "Apples: 5kg"
 
-newElm.setAttribute('id', 0) // set <li> element id to 0
+
+newElm.setAttribute('id', 0) // set <li> element id to 0;
+
 
 lst.replaceChild(newElm, lst.firstChild)  //* REPLACE the first element (replaceWith, toReplace)
 
 
-lst.removeChild(lst.lastChild)  //* REMOVE the last element
+lst.removeChild(lst.lastChild)  //* REMOVE CHILD the last element
 
-// remove the list
-// lst.remove()
+// REMOVE ELEMENT remove the list
+    //  lst.remove()
+
+
+// Select All \\
+LIs = document.querySelectorAll('li') // .length
+
+for (LI of LIs)
+    LI.style.border = '1px solid black'
+
 
 
 // add an event listener to the button
-let btn = document.querySelector('button').onclick = () => { alert('Button Clicked')} 
+let btn = document.querySelector('button').onclick = () => { 
+    alert('Button Clicked')
+    // remove all list contents
+    while (lst.firstChild) {
+        lst.removeChild(lst.firstChild)
+    }
+    // remove the list
+    //  lst.remove()
+} 
 
 let btnAttr = document.querySelector('button').attributes
-console.log(btnAttr) // get the second attribute of the button element: class
+console.log(btnAttr[1]) // get the second attribute of the button element: class
 
 let btnClass = document.querySelector('button').classList
-console.log(btnClass) // get the classes of the button element
+console.log('Classes :', btnClass.value) // get the classes of the button element
 
 
 
-console.log(document.body.nodeType) // check is the node contains an element [1] or text [0]
+// Node Types \\
+console.log(document.head.nodeType) // check is the node contains an element [1] or text [0]
+
+
+
+/*
+<ul id='list'>
+    <li> One </li>
+    <li> Two </li>
+    <li> Three </li>
+</ul>
+
+*/
+
+ul = document.querySelector('#list2')
+li = document.querySelectorAll('li')[1] // get the second <li> element
+
+
+li.parentNode       // (ul)  get the Parent of the <li> element
+
+
+// with text
+ul.firstChild        // get the First Child of the <ul> element
+
+ul.lastChild          // get the Last Child of the <ul> element
+
+ul.childNodes         // get all Children of the <ul> element
+
+// with text
+li.nextSibling            // get the Next Sibling of the <li> element
+
+li.previousSibling
+
+
+// no text/ element only
+ul.firstElementChild      // get the First Element Child of the <ul> element
+
+ul.lastElementChild       // get the Last Element Child of the <ul> element
+
+ul.children               // get all Children Elements of the <ul> element
+
+// no text/ element only
+li.nextElementSibling     // get the Next Element Sibling of the <li> element
+
+li.previousElementSibling
+
+
+
+// Classes \\
+console.log(ul.classList)   // get the classes of the <ul> element
+
+ul.classList.add('added!')    // add a class to the <ul> element
+
+
+
+ul.removeAttribute("class")   //  remove attribute class from the <ul> element
+
+
+
