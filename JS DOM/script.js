@@ -141,7 +141,7 @@ for (LI of LIs)
 
 // add an event listener to the button
 let btn = document.querySelector('button').onclick = () => { 
-    alert('Button Clicked')
+    alert('Clear List?')
     // remove all list contents
     while (lst.firstChild) {
         lst.removeChild(lst.firstChild)
@@ -217,3 +217,90 @@ ul.removeAttribute("class")   //  remove attribute class from the <ul> element
 
 
 
+
+// Event Listeners \\
+
+// add a button to the document
+btn = document.createElement('button')
+
+btn.textContent = 'Clear Documenr'
+
+btn.setAttribute('class', 'btnR')
+
+btn.style.border = '3px double gray'
+btn.style.borderRadius = '20px'
+
+document.body.append(btn)
+
+
+
+/// Add Event Listener \\\
+
+// btn on click
+btn.addEventListener('click', () => {
+    
+    let ansr = confirm('Do you want to Clear the Document?')
+
+    if (ansr == true){
+        while (document.body.firstChild)
+            document.body.removeChild(document.body.firstChild)
+    }
+})
+
+btn.addEventListener('dblclick', () => {
+
+    if (ansr == true){
+        while (document.body.firstChild)
+            document.body.removeChild(document.body.firstChild)
+    }
+})
+
+
+btn.addEventListener('mouseover',  ovr = () => {  // MOUSE OVER element
+    btn.style.background = 'red'
+})
+
+btn.addEventListener('mouseout', out = () => {  // MOUSE OUT of element
+    btn.style.background = 'crimson'
+})
+
+
+// Remove Event Listeners
+
+setTimeout(() =>{
+    btn.removeEventListener('mouseover', ovr)
+    
+    btn.removeEventListener('mouseout', out)
+
+    btn.style.background = 'white'
+}, 4000)
+
+
+
+
+/// Mouse Events \\\
+
+//  HOVER: mouseover,  mouseout
+
+//    CLICK: mousedown,  mouseup
+
+//      CLICKED:  click, dblclick
+
+// MOUSEMOVE
+document.body.addEventListener('mousemove', (e) => {
+    console.log(`Screen X/Y: ${e.screenX} ${e.screenY} | Client X/Y ${e.clientX} ${e.clientY}`);
+})
+
+
+
+
+/// Keyboard Events \\\
+
+// keyup: all keys  |  keydown: all keys  |  keypress: letter keys
+
+document.body.addEventListener('keypress', (key) => {
+    if (key['key'] == 'Delete')   // [KeyCode] 
+        alert('Key [Delete] pressed')
+
+    console.log(key);
+})

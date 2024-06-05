@@ -68,14 +68,25 @@ console.log(typeof(undefined))  // undefined
 
 
 /* prompt()
- * User Input */
+ * User Input 
+ */
 //var name = prompt('What is your name') // get user input 
 //document.write(`Welcome ${name}!`);
 
 
 /* alert()
- * User Output */
+ * User Output 
+ */
 //alert(`Welcome Back ${name}`)
+
+/* confirm()
+ * Confirm user action [OK/Cancel]
+ */
+
+// let ansr = confirm('Do you want to Clear the Document?')
+
+// ansr => true (OK)  | false (CANCEL)
+
 
 
 /* Number()
