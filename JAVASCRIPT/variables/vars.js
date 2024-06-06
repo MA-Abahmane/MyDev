@@ -18,6 +18,8 @@ console.log(y); // y is given (var) by default
 
 function f() {
     var m = 1
+
+    console.log(a) // 1
 }
 
 //console.log(m)
@@ -70,7 +72,7 @@ console.log(typeof(undefined))  // undefined
 /// Document/User Interaction \\\
 
 /* prompt()
- * User Input 
+ * User Input  [string]
  */
 var name = prompt('What is your name') // get user input 
 //document.write(`Welcome ${name}!`);
@@ -122,6 +124,10 @@ String(f) // '77'
 
 f.toString() // '77'
 
+
+('AminE').toUpperCase()     // 'AMINE'
+
+('AminE').toLowerCase()     // 'amine'
 
 
 

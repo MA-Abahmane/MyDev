@@ -1,13 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Time</title>
-</head>
-<body bgcolor="black">
-    
+<body onload="afficher()">
 
-<script src="script.js"></script>
+    <h1> Achat Livres </h1>
+    <h2>Choisir votre livre : </h2>
+
+    <select id="s" onchange="afficher()" class="form-select">
+
+    </select>
+    
+    <table class="table">
+        <tr><td colspan="2" id="lblisbn"></td></tr>
+        <tr><td>Titre</td><td id="lbltitre"></td></tr>
+        <tr><td>Prix</td><td id="lblprix"></td></tr>
+        <tr><td>Image</td><td><img src="" alt="aperçu" id="image"/><td></td></tr>
+    </table>
+
+    <input type="button" value="Ajouter au panier" onclick="ajouter()"
+    class="btn btn-primary"/>
+
+    <input type="button" value="Retirer du panier" onclick="retirer()"
+    class="btn btn-primary"/>
+
+    <table id="t" class="table">
+    <tr> <th> Titre </th> <th> prix </th> </tr>
+    
+    </table>
+    <label id="total"></label>
 </body>
-</html>

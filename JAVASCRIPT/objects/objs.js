@@ -1,7 +1,7 @@
 /// Constructor object creation
 
 function Car(name, model, prise, stock) {
-    this.name = name;
+    this.name = name
     this.model = model;
     this.prise = prise;
     this.stock = stock;

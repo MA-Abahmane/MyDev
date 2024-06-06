@@ -83,7 +83,7 @@ lst = document.querySelector('.list')   // select by class (ul)
 bx.style.width = '200px'
 bx.style.height = '50px'
 bx.style.backgroundColor = 'royalBlue'
-bx.style.borderRadius = '10px'
+bx.style.borderRadius = '10px'  
 
 bx.innerHTML = 'To-DO List'
 console.log(bx.innerHTML);   // To-DO List
@@ -212,7 +212,7 @@ li.previousElementSibling
 // Classes \\
 console.log(ul.classList)   // get the classes of the <ul> element
 
-ul.classList.add('added!')    // add a class to the <ul> element
+ul.classList.add(' added!')    // add a class to the <ul> element
 
 
 

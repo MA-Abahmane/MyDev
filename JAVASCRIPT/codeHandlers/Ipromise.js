@@ -6,7 +6,7 @@
 
 
 const p = new Promise((resolve, reject) => {
-    
+
     setTimeout(() => {
         let x = 1
 
