@@ -17,5 +17,6 @@ list = [
 
 odds = list.filter(x => x % 2 == 1 && x <= 50)
 
+
 // print filtered list [only odd numbers]
 console.log(odds);

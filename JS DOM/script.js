@@ -11,6 +11,8 @@ const tm = setTimeout(() => {
 }, 5000) // milliseconds
 
 
+clearTimeout(tm)
+
 
 // [setInterval]
 // set a function to run repeatedly after a certain amount of time
@@ -25,6 +27,7 @@ const nt = setInterval(() => {
 }, 999) // milliseconds
 
 
+clearInterval(nt)
 
 
 /// Regex \\\
@@ -128,7 +131,7 @@ lst.replaceChild(newElm, lst.firstChild)  //* REPLACE the first element (replace
 lst.removeChild(lst.lastChild)  //* REMOVE CHILD the last element
 
 // REMOVE ELEMENT remove the list
-    //  lst.remove()
+      lst.remove()
 
 
 // Select All \\

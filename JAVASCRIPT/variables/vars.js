@@ -67,23 +67,26 @@ console.log(typeof(undefined))  // undefined
 
 
 
+/// Document/User Interaction \\\
+
 /* prompt()
  * User Input 
  */
-//var name = prompt('What is your name') // get user input 
+var name = prompt('What is your name') // get user input 
 //document.write(`Welcome ${name}!`);
 
 
 /* alert()
- * User Output 
+ * Alert User
  */
-//alert(`Welcome Back ${name}`)
+
+alert(`Welcome Back ${name}`)
 
 /* confirm()
  * Confirm user action [OK/Cancel]
  */
 
-// let ansr = confirm('Do you want to Clear the Document?')
+ let ansr = confirm('Do you want to Clear the Document?')
 
 // ansr => true (OK)  | false (CANCEL)
 
@@ -100,6 +103,11 @@ Number(true) // 1
 Number(false) // 0
 
 Number('22 11') // NaN
+
+// OR
+
+n = parseInt('222111222')
+
 
 /// + to number converter
 y = "5"; // y => string && x => number
