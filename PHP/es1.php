@@ -3,7 +3,9 @@
  * Description: PHP file
  * php : Personal Home Page (PHP: Hypertext Preprocessor)
 */
+
 # Single line comment
+
 // Single line comment
 
 // echo : print out \\
@@ -23,16 +25,6 @@ const PI = 3.14;
 echo '<br> <br> PI: ' . PI;
 
 
-// arrays \\
-$colors = array('red', 'green', 'blue');
-$colors[] = 'yellow';
-
-// Dictionary \\
-$car = array('name' => 'Ferrati', 'speed' => 350, 'inStock' => false); 
-$car['colors'] = ['red', 'green', 'blue'];
-
-// foreach ($car as $key => $value)
-//      echo '<br>' . $key . ' : ' . $value;
 
 
 // echo : print out \\
@@ -131,6 +123,7 @@ $varDynamic = 'Hello';
 
 $$varDynamic = 'World'; // $Hello = 'World'
 
+
 echo '<br> <br> $varDynamic: ' . $varDynamic;
 echo '<br> $$varDynamic: ' . $$varDynamic;
 
@@ -161,6 +154,7 @@ $n = (int)'44.5'; # Convert string to int: 44
 $a = (float)"12.01"; # Convert string to float: 12.01
 
 $s = (string)12; # Convert int to string: '12'
+
 
 
 

@@ -81,7 +81,9 @@ xhttp.open("GET", "file.json", true)
 // Send a request
 xhttp.send()
 
-xhttp.abord
+
+/ stop
+xhttp.abort()
 
 
 

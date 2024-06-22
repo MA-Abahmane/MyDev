@@ -294,7 +294,7 @@ document.body.addEventListener('mousemove', (e) => {
     console.log(`Screen X/Y: ${e.screenX} ${e.screenY} | Client X/Y ${e.clientX} ${e.clientY}`);
 })
 
-
+ 
 
 
 /// Keyboard Events \\\
@@ -307,3 +307,67 @@ document.body.addEventListener('keypress', (key) => {
 
     console.log(key);
 })
+
+
+
+
+
+
+
+
+// JQuery \\
+
+$('div > p').css('color', 'red')
+
+$('h2').hide()
+
+$(document).ready(function () {
+
+})
+
+$('p').slideUp(2000).slideDown(2000)
+
+$('ul li').each(function () {
+    this.css('color', 'white')
+
+    this.attr('class', 'lix')
+    
+    if (this.hasClass('disable'))
+        this.removeAttribute('class')
+
+    $('button').click(function () {
+
+    })
+
+    $('button').dblclick(function () {
+        
+    })
+
+    $('button').mouseender(function () {
+        
+    })
+
+    $('button').mouseleave(function () {
+        
+    })
+
+
+
+})
+
+
+
+// Ajax \\
+
+xhttp = new XMLHttpRequest()
+
+
+xhttp.onload = function() {
+    // data:  this.responseText
+}
+
+xhttp.open('GET', 'file.txt', true)
+xhttp.send()
+
+
+xhttp.abord()
