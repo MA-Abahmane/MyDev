@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (max-width: 600px){
+            #header-img{
+                width: 100px;
+            }
+            #nav-bar{
+                flex-direction: column;
+            }
+            #form{
+                display: flex;
+                flex-direction: column;
+            }
+
+            #nav-bar {
+                display: flex;
+                flex-direction: row;
+                align-items: right;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+<header id="header">
+    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" id="header-img" alt="logo" srcset="">
+
+    <nav id="nav-bar">
+        <a href="#header-img" class="nav-link">main</a> &nbsp;
+        <a href="#video" class="nav-link">video</a> &nbsp;
+        <a href="#form" class="nav-link">signup</a> &nbsp;
+
+        <video id="video" src="https://youtu.be/y8Yv4pnO7qc" width="200px"></video>
+
+        <form action="https://www.freecodecamp.com/email-submit" id="form" method="GET">
+            <p>email<input type="email" name="email"  id="email" placeholder="Email address"></p>
+            <input type="submit" id="submit">
+        </form>
+    </nav>
+
+</header>
+
+</body>
+</html>

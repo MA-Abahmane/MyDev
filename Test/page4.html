@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (max-width: 600px){
+            #navbar{
+                display: flex;
+                flex-direction: column;
+            }
+            #projects{
+                display: flex;
+                flex-direction: column;
+            }
+            #contact{
+                display: flex;
+                flex-direction: column;
+            }
+            #navbar{
+                display: flex;
+                flex-direction: row;
+                align-items: right;
+            }
+
+            nav {
+                position: fixed;
+                top: 7;
+                left: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: right;
+                
+            }
+
+            #welcome-section {
+                margin-top: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="navbar">
+        <button><a href="#welcome-section">About</a></button>
+        <button><a href="#projects">Projects</a></button>
+        <button><a href="#contact">Contact</a></button>
+    </nav>
+
+    <section id="welcome-section" class="project-tile">
+        <h1 class="project-tile" >Hi, I am Phoenix</h1>
+
+    </section>
+
+    <section id="projects" class="project-tile">
+        <button><a href="https://github.com/MA-Abahmane" class="project-tile" target="_blank" id="profile-link">Github</a ></button>
+        <button><a href="https://github.com/MA-Abahmane/Asteroid-Aegis">Asteroid Aegis</a></button> 
+        <button><a href="https://github.com/MA-Abahmane/SKYWAR">SKYWAR</a></button> 
+        <button><a href="https://github.com/MA-Abahmane/Thimbles">Thimbles</a></button> 
+        <button><a href="https://github.com/MA-Abahmane/AirBnB_clone_v4">AirBnB clone v4</a></button> 
+    </section>
+
+    <br>
+    <br>
+
+    <section id="contact">
+        <form action="">
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>
